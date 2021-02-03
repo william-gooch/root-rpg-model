@@ -47,5 +47,13 @@ declare const drives: {
         readonly name: "Infamy";
         readonly description: "Advance when you decrease your reputation with any faction.";
     };
+    readonly greed: {
+        readonly name: "Greed";
+        readonly description: "Advance when you secure a serious payday or treasure.";
+    };
+    readonly ambition: {
+        readonly name: "Ambition";
+        readonly description: "Advance when you increase your reputation with any faction.";
+    };
 };
 export default drives;

@@ -54,10 +54,12 @@ export interface Playbook {
 import arbiter from "./arbiter";
 import ranger from "./ranger";
 import scoundrel from "./scoundrel";
+import thief from "./thief";
 const playbooks = {
   arbiter,
   ranger,
   scoundrel,
+  thief,
 } as const;
 
 export default playbooks;

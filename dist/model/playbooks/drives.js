@@ -44,6 +44,14 @@ const drives = {
     "infamy": {
         name: "Infamy",
         description: "Advance when you decrease your reputation with any faction.",
+    },
+    "greed": {
+        name: "Greed",
+        description: "Advance when you secure a serious payday or treasure.",
+    },
+    "ambition": {
+        name: "Ambition",
+        description: "Advance when you increase your reputation with any faction.",
     }
 };
 exports.default = drives;

@@ -113,5 +113,33 @@ On a miss, you need some vital component to finish it; the GM will tell you what
         name: "Better Lucky than Good",
         description: "When you **use a weapon move (basic or skilled)**, mark exhaustion to roll with Luck instead of the listed stat.",
     },
+    // Ranger Moves
+    "breaking-and-entering": {
+        name: "Breaking and Entering",
+        description: "When you **attempt roguish feats** to get into or out of a place you’ve previously been, you can mark exhaustion to make the move as if you had rolled a 10+, instead of rolling.",
+    },
+    "disappear-into-the-dark": {
+        name: "Disappear Into the Dark",
+        description: "When you **slip into shadows while unnoticed**, mark exhaustion and hold 1. As long as you remain quiet, move slowly, and hold 1 for this move, you will remain hidden. If you inadvertently reveal yourself, lose your hold. Spend your hold to reveal yourself from a darkened place, suddenly and without warning. If you attack someone immediately after spending the hold, take +3 on the roll.",
+    },
+    "rope-a-dope": {
+        name: "Rope-a-dope",
+        description: "When you **evade and dodge your enemy so as to tire them out**, roll with Finesse. On a hit, you can mark exhaustion to make them mark 2-exhaustion. On a 10+, you can mark exhaustion to make them mark 3-exhaustion. On a miss, they catch you in the middle of a dodge—you’re at their mercy.",
+    },
+    "small-hands": {
+        name: "Small Hands",
+        description: "When you **grapple** with an enemy larger than you, roll with Finesse instead of Might. On a miss, they overpower you—you’re at their mercy.",
+    },
+    "master-thief": {
+        name: "Master Thief",
+        description: "Take +1 Finesse (max +3).",
+    },
+    "nose-for-gold": {
+        name: "Nose for Gold",
+        description: `When you **figure someone out**, you can always ask (even on a miss):
+- what is the most valuable thing they are carrying?
+When you **read a tense situation**, you can always ask (even on a miss):
+- what is the most valuable thing here?`
+    },
 };
 exports.default = moves;
