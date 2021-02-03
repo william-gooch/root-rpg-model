@@ -113,7 +113,7 @@ On a miss, you need some vital component to finish it; the GM will tell you what
         name: "Better Lucky than Good",
         description: "When you **use a weapon move (basic or skilled)**, mark exhaustion to roll with Luck instead of the listed stat.",
     },
-    // Ranger Moves
+    // Thief Moves
     "breaking-and-entering": {
         name: "Breaking and Entering",
         description: "When you **attempt roguish feats** to get into or out of a place you’ve previously been, you can mark exhaustion to make the move as if you had rolled a 10+, instead of rolling.",
@@ -140,6 +140,38 @@ On a miss, you need some vital component to finish it; the GM will tell you what
 - what is the most valuable thing they are carrying?
 When you **read a tense situation**, you can always ask (even on a miss):
 - what is the most valuable thing here?`
+    },
+    // Tinker Moves
+    "toolbox": {
+        name: "Toolbox",
+        description: `You have a kit of tools and supplies with which you work on long-term projects. Choose two features:
+*assorted scrap wood, assorted gears and springs, esoteric hand tools, manuals, assorted medicines, portable alchemy kit, sewing kit, cookware, minor explosives*
+Choose one drawback:
+*heavy (counts as 2 Load instead of 1), bulky & obvious, stolen, fragile*
+When you **open up your toolkit and dedicate yourself to making a thing or to getting to the bottom of something**, decide what and tell the GM. The GM will give you between 1 to 4 conditions you must fulfill to accomplish your goal, including time taken, materials needed, help needed, facilities/tools needed, or the limits on the project. When you **accomplish the conditions**, you accomplish the goal.`,
+    },
+    "repair": {
+        name: "Repair",
+        description: "When you **repair destroyed personal equipment with your toolbox**, the GM will set one condition as per the toolbox move. Fulfill it, and clear all wear for that equipment. When you **repair damaged personal equipment with your toolkit**, you do it as long as you spend depletion or value, 1 for 1, for each box of wear you clear.",
+    },
+    "big-pockets": {
+        name: "Big Pockets",
+        description: "Take two extra boxes of depletion."
+    },
+    "jury-rig": {
+        name: "Jury Rig",
+        description: `When you **create a makeshift device on the fly**, roll with Cunning. On a hit, you create a device that works once, then breaks. On a 10+, choose one:
+- It works exceptionally well
+- You get an additional use out of it
+On a miss, the device works, but it has an unintended side effect that the GM will reveal when you use it.`
+    },
+    "nimble-mind": {
+        name: "Nimble Mind",
+        description: "When you **attempt roguish feats** involving mechanisms or locks, mark depletion to roll with Cunning instead of Finesse."
+    },
+    "dismantle": {
+        name: "Dismantle",
+        description: "When you **dismantle a broken or disabled piece of equipment or machinery**, clear 2 depletion boxes.",
     },
 };
 exports.default = moves;

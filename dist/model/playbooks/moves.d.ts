@@ -139,5 +139,29 @@ declare const moves: {
         readonly name: "Nose for Gold";
         readonly description: "When you **figure someone out**, you can always ask (even on a miss):\n- what is the most valuable thing they are carrying?\nWhen you **read a tense situation**, you can always ask (even on a miss):\n- what is the most valuable thing here?";
     };
+    readonly toolbox: {
+        readonly name: "Toolbox";
+        readonly description: "You have a kit of tools and supplies with which you work on long-term projects. Choose two features:\n*assorted scrap wood, assorted gears and springs, esoteric hand tools, manuals, assorted medicines, portable alchemy kit, sewing kit, cookware, minor explosives*\nChoose one drawback:\n*heavy (counts as 2 Load instead of 1), bulky & obvious, stolen, fragile*\nWhen you **open up your toolkit and dedicate yourself to making a thing or to getting to the bottom of something**, decide what and tell the GM. The GM will give you between 1 to 4 conditions you must fulfill to accomplish your goal, including time taken, materials needed, help needed, facilities/tools needed, or the limits on the project. When you **accomplish the conditions**, you accomplish the goal.";
+    };
+    readonly repair: {
+        readonly name: "Repair";
+        readonly description: "When you **repair destroyed personal equipment with your toolbox**, the GM will set one condition as per the toolbox move. Fulfill it, and clear all wear for that equipment. When you **repair damaged personal equipment with your toolkit**, you do it as long as you spend depletion or value, 1 for 1, for each box of wear you clear.";
+    };
+    readonly "big-pockets": {
+        readonly name: "Big Pockets";
+        readonly description: "Take two extra boxes of depletion.";
+    };
+    readonly "jury-rig": {
+        readonly name: "Jury Rig";
+        readonly description: "When you **create a makeshift device on the fly**, roll with Cunning. On a hit, you create a device that works once, then breaks. On a 10+, choose one:\n- It works exceptionally well\n- You get an additional use out of it\nOn a miss, the device works, but it has an unintended side effect that the GM will reveal when you use it.";
+    };
+    readonly "nimble-mind": {
+        readonly name: "Nimble Mind";
+        readonly description: "When you **attempt roguish feats** involving mechanisms or locks, mark depletion to roll with Cunning instead of Finesse.";
+    };
+    readonly dismantle: {
+        readonly name: "Dismantle";
+        readonly description: "When you **dismantle a broken or disabled piece of equipment or machinery**, clear 2 depletion boxes.";
+    };
 };
 export default moves;
