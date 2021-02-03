@@ -23,7 +23,7 @@ const tinkerData: Playbook = {
   ],
   connections: { 
     "peer": "### and I have been working together well for a while. We read each other’s moves easily.",
-    "family": "_____________ and I had each other’s back when we were run out of a clearing because our natures got out of hand.",
+    "family": "### and I had each other’s back when we were run out of a clearing because our natures got out of hand.",
   },
   initialStats: {
     "Charm": -1,
