@@ -31,5 +31,21 @@ declare const drives: {
         readonly name: "Revenge";
         readonly description: "Name your foe. Advance when you cause significant harm to them or their interests.";
     };
+    readonly chaos: {
+        readonly name: "Chaos";
+        readonly description: "Advance when you topple a tyrannical or dangerously overbearing figure or order.";
+    };
+    readonly thrills: {
+        readonly name: "Thrills";
+        readonly description: "Advance when you escape from certain death or incarceration.";
+    };
+    readonly crime: {
+        readonly name: "Crime";
+        readonly description: "Advance when you illicitly score a significant prize or pull off an illegal caper against impressive odds.";
+    };
+    readonly infamy: {
+        readonly name: "Infamy";
+        readonly description: "Advance when you decrease your reputation with any faction.";
+    };
 };
 export default drives;

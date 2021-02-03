@@ -15,5 +15,9 @@ declare const connections: {
         readonly name: "Watcher";
         readonly description: "When you **figure them out**, you always hold 1, even on a miss. When you **plead with them to go along with you**, you can let them clear 2-exhaustion instead of 1.";
     };
+    readonly friend: {
+        readonly name: "Friend";
+        readonly description: "When you **help** them, you can mark 2-exhaustion to give a +2, instead of 1-exhaustion for a +1.";
+    };
 };
 export default connections;

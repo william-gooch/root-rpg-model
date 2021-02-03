@@ -32,6 +32,22 @@ const drives = {
     name: "Revenge",
     description: "Name your foe. Advance when you cause significant harm to them or their interests.",
   },
+  "chaos": {
+    name: "Chaos",
+    description: "Advance when you topple a tyrannical or dangerously overbearing figure or order.",
+  },
+  "thrills": {
+    name: "Thrills",
+    description: "Advance when you escape from certain death or incarceration.",
+  },
+  "crime": {
+    name: "Crime",
+    description: "Advance when you illicitly score a significant prize or pull off an illegal caper against impressive odds.",
+  },
+  "infamy": {
+    name: "Infamy",
+    description: "Advance when you decrease your reputation with any faction.",
+  }
 } as const;
 
 export default drives;

@@ -84,5 +84,34 @@ On a miss, you escape, but it costs you—mark injury or exhaustion, GM’s choi
         source: "ranger",
         description: "Take two of the following weapon skills: *Trick Shot*, *Confuse Senses*, *Improvise Weapon*, *Disarm*, *Vicious Strike*. None of the skills you take with this move count against your maximum for advancement."
     },
+    // Scoundrel Moves
+    "arsonist": {
+        name: "Arsonist",
+        description: "When you **wreck something** with flagrantly dangerous means (explosives, uncontrolled flame, etc.), roll with Luck instead of Might.",
+    },
+    "create-to-destroy": {
+        name: "Create to Destroy",
+        description: `When you use **available materials to rig up a dangerous device**, roll with Finesse. On a hit, you cobble together something that will do what you want, one time. On a 10+, choose one. On a 7-9, choose two. The device is:
+- more dangerous than intended
+- larger or more unwieldy than intended
+- more temperamental and fragile than intended
+On a miss, you need some vital component to finish it; the GM will tell you what.`,
+    },
+    "its-a-distraction": {
+        name: "It's a Distraction!",
+        description: "You gain the roguish feat *Blindside* (it does not count against your maximum for advancement). When you **attempt a roguish feat** to blindside someone while they are distracted by environmental dangers (a raging fire, an oncoming flood, etc.), roll with Luck instead of Cunning.",
+    },
+    "daredevil": {
+        name: "Daredevil",
+        description: "You’re at your luckiest when you go into danger without hesitation. When you **dive into a dangerous situation without forethought or planning**, treat yourself as having “Luck Armor,” with 1 box of wear (remember, armor is only “destroyed” when you would mark another box of wear, and all its boxes are full). The “Luck armor” automatically goes away once the danger has passed, and the next time you would have “Luck armor,” you gain it as if it was brand new with clear boxes.",
+    },
+    "danger-mask": {
+        name: "Danger Mask",
+        description: "You have a mask or outfit you wear when you go about your most destructive work—more of a calling card, an identifier of “the real you,” than a disguise. Treat it as a piece of equipment with two boxes of wear. While you have your mask on, any notoriety you gain is doubled, any prestige you gain is halved, and take +1 to **trust fate** and all Scoundrel playbook moves. If your mask is ever taken from you, mark exhaustion. If your mask is ever destroyed, mark 4-exhaustion. If your mask is destroyed, you can make a new mask when time passes."
+    },
+    "better-lucky-than-good": {
+        name: "Better Lucky than Good",
+        description: "When you **use a weapon move (basic or skilled)**, mark exhaustion to roll with Luck instead of the listed stat.",
+    },
 };
 exports.default = moves;

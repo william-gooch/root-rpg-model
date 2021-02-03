@@ -5,8 +5,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const arbiter_1 = __importDefault(require("./arbiter"));
 const ranger_1 = __importDefault(require("./ranger"));
+const scoundrel_1 = __importDefault(require("./scoundrel"));
 const playbooks = {
     arbiter: arbiter_1.default,
     ranger: ranger_1.default,
+    scoundrel: scoundrel_1.default,
 };
 exports.default = playbooks;
