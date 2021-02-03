@@ -55,5 +55,13 @@ declare const drives: {
         readonly name: "Ambition";
         readonly description: "Advance when you increase your reputation with any faction.";
     };
+    readonly "clean-paws": {
+        readonly name: "Clean Paws";
+        readonly description: "Advance when you accomplish an illicit, criminal goal while maintaining a believable veneer of innocence.";
+    };
+    readonly wanderlust: {
+        readonly name: "Wanderlust";
+        readonly description: "Advance when you finish a journey to a clearing.";
+    };
 };
 export default drives;

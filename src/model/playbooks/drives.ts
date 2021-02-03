@@ -55,6 +55,14 @@ const drives = {
   "ambition": {
     name: "Ambition",
     description: "Advance when you increase your reputation with any faction.",
+  },
+  "clean-paws": {
+    name: "Clean Paws",
+    description: "Advance when you accomplish an illicit, criminal goal while maintaining a believable veneer of innocence.",
+  },
+  "wanderlust": {
+    name: "Wanderlust",
+    description: "Advance when you finish a journey to a clearing.",
   }
 } as const;
 

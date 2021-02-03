@@ -56,12 +56,14 @@ import ranger from "./ranger";
 import scoundrel from "./scoundrel";
 import thief from "./thief";
 import tinker from "./tinker";
+import vagrant from "./vagrant";
 const playbooks = {
   arbiter,
   ranger,
   scoundrel,
   thief,
   tinker,
+  vagrant,
 } as const;
 
 export default playbooks;
