@@ -66,7 +66,7 @@ const tinkerData: Playbook = {
       "dismantle": true,
     }
   },
-  startingEquipmentValue: 6,
+  startingEquipmentValue: 8,
 };
 
 export default tinkerData;

@@ -66,6 +66,6 @@ const tinkerData = {
             "dismantle": true,
         }
     },
-    startingEquipmentValue: 6,
+    startingEquipmentValue: 8,
 };
 exports.default = tinkerData;
