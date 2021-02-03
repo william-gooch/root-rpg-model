@@ -18,6 +18,12 @@ export interface Harm {
         current: number;
     };
 }
+export interface Reputation {
+    faction: string;
+    modifier: number;
+    notoriety: number;
+    prestige: number;
+}
 export interface Character {
     playbook: keyof typeof playbooks;
     name: string;
@@ -36,13 +42,7 @@ export interface Character {
     connections: {
         -readonly [name in keyof typeof connections]?: string;
     };
-    reputation: {
-        [faction: string]: {
-            modifier: number;
-            notoriety: number;
-            prestige: number;
-        };
-    };
+    reputation: Reputation[];
     stats: Stats;
     harm: Harm;
     roguishFeats: {

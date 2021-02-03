@@ -17,7 +17,7 @@ exports.fromPlaybook = (playbook) => {
         drives: {},
         nature: "",
         connections: Object.fromEntries(Object.entries(playbook.connections).map(([name, blurb]) => [name, ""])),
-        reputation: Object.fromEntries(faction_1.factions.map(faction => [faction.name, { modifier: 0, notoriety: 0, prestige: 0 }])),
+        reputation: faction_1.factions.map(faction => ({ faction: faction.name, modifier: 0, notoriety: 0, prestige: 0 })),
         stats: playbook.initialStats,
         harm: {
             injury: { max: 4, current: 0 },

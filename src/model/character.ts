@@ -13,6 +13,13 @@ export interface Harm {
     depletion: { max: number, current: number };
 }
 
+export interface Reputation {
+    faction: string;
+    modifier: number;
+    notoriety: number;
+    prestige: number;
+}
+
 export interface Character {
     playbook: keyof typeof playbooks;
 
@@ -38,13 +45,7 @@ export interface Character {
     };
 
     // Reputation
-    reputation: {
-        [faction: string]: {
-            modifier: number;
-            notoriety: number;
-            prestige: number;
-        };
-    };
+    reputation: Reputation[];
 
     stats: Stats;
     harm: Harm;
@@ -75,7 +76,7 @@ export const fromPlaybook = (playbook: Playbook): Character => {
         nature: "",
         connections: Object.fromEntries(Object.entries(playbook.connections).map(([name, blurb]) => [name, ""])),
 
-        reputation: Object.fromEntries(factions.map(faction => [faction.name, { modifier: 0, notoriety: 0, prestige: 0 }])),
+        reputation: factions.map(faction => ({ faction: faction.name, modifier: 0, notoriety: 0, prestige: 0 })),
 
         stats: playbook.initialStats,
         harm: {

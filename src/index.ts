@@ -1,4 +1,4 @@
-import { Harm, Character, fromPlaybook } from "./model/character";
+import { Harm, Reputation, Character, fromPlaybook } from "./model/character";
 import { equipmentTags, TagName, WeaponRange, EquipmentItem, defaultEquipment, getItemValue } from "./model/equipment";
 import { Faction, factions } from "./model/faction";
 import { roguishFeats, RoguishFeat, weaponSkills, WeaponSkill } from "./model/model";
@@ -10,7 +10,7 @@ import drives, { Drive } from "./model/playbooks/drives";
 import connections, { Connection } from "./model/playbooks/connections";
 
 export type {
-    Harm, Character,
+    Harm, Reputation, Character,
     TagName, WeaponRange, EquipmentItem,
     Faction,
     RoguishFeat, WeaponSkill,
