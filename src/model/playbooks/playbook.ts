@@ -59,6 +59,7 @@ import tinker from "./tinker";
 import vagrant from "./vagrant";
 import adventurer from "./adventurer";
 import harrier from "./harrier";
+import ronin from "./ronin";
 const playbooks = {
   arbiter,
   ranger,
@@ -68,6 +69,7 @@ const playbooks = {
   vagrant,
   adventurer,
   harrier,
+  ronin,
 } as const;
 
 export default playbooks;

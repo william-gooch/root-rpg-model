@@ -87,10 +87,12 @@ On a miss, you escape, but it costs you—mark injury or exhaustion, GM’s choi
     // Scoundrel Moves
     "arsonist": {
         name: "Arsonist",
+        source: "scoundrel",
         description: "When you **wreck something** with flagrantly dangerous means (explosives, uncontrolled flame, etc.), roll with Luck instead of Might.",
     },
     "create-to-destroy": {
         name: "Create to Destroy",
+        source: "scoundrel",
         description: `When you use **available materials to rig up a dangerous device**, roll with Finesse. On a hit, you cobble together something that will do what you want, one time. On a 10+, choose one. On a 7-9, choose two. The device is:
 - more dangerous than intended
 - larger or more unwieldy than intended
@@ -99,43 +101,53 @@ On a miss, you need some vital component to finish it; the GM will tell you what
     },
     "its-a-distraction": {
         name: "It's a Distraction!",
+        source: "scoundrel",
         description: "You gain the roguish feat *Blindside* (it does not count against your maximum for advancement). When you **attempt a roguish feat** to blindside someone while they are distracted by environmental dangers (a raging fire, an oncoming flood, etc.), roll with Luck instead of Cunning.",
     },
     "daredevil": {
         name: "Daredevil",
+        source: "scoundrel",
         description: "You’re at your luckiest when you go into danger without hesitation. When you **dive into a dangerous situation without forethought or planning**, treat yourself as having “Luck Armor,” with 1 box of wear (remember, armor is only “destroyed” when you would mark another box of wear, and all its boxes are full). The “Luck armor” automatically goes away once the danger has passed, and the next time you would have “Luck armor,” you gain it as if it was brand new with clear boxes.",
     },
     "danger-mask": {
         name: "Danger Mask",
+        source: "scoundrel",
         description: "You have a mask or outfit you wear when you go about your most destructive work—more of a calling card, an identifier of “the real you,” than a disguise. Treat it as a piece of equipment with two boxes of wear. While you have your mask on, any notoriety you gain is doubled, any prestige you gain is halved, and take +1 to **trust fate** and all Scoundrel playbook moves. If your mask is ever taken from you, mark exhaustion. If your mask is ever destroyed, mark 4-exhaustion. If your mask is destroyed, you can make a new mask when time passes."
     },
     "better-lucky-than-good": {
         name: "Better Lucky than Good",
+        source: "scoundrel",
         description: "When you **use a weapon move (basic or skilled)**, mark exhaustion to roll with Luck instead of the listed stat.",
     },
     // Thief Moves
     "breaking-and-entering": {
         name: "Breaking and Entering",
+        source: "thief",
         description: "When you **attempt roguish feats** to get into or out of a place you’ve previously been, you can mark exhaustion to make the move as if you had rolled a 10+, instead of rolling.",
     },
     "disappear-into-the-dark": {
         name: "Disappear Into the Dark",
+        source: "thief",
         description: "When you **slip into shadows while unnoticed**, mark exhaustion and hold 1. As long as you remain quiet, move slowly, and hold 1 for this move, you will remain hidden. If you inadvertently reveal yourself, lose your hold. Spend your hold to reveal yourself from a darkened place, suddenly and without warning. If you attack someone immediately after spending the hold, take +3 on the roll.",
     },
     "rope-a-dope": {
         name: "Rope-a-dope",
+        source: "thief",
         description: "When you **evade and dodge your enemy so as to tire them out**, roll with Finesse. On a hit, you can mark exhaustion to make them mark 2-exhaustion. On a 10+, you can mark exhaustion to make them mark 3-exhaustion. On a miss, they catch you in the middle of a dodge—you’re at their mercy.",
     },
     "small-hands": {
         name: "Small Hands",
+        source: "thief",
         description: "When you **grapple** with an enemy larger than you, roll with Finesse instead of Might. On a miss, they overpower you—you’re at their mercy.",
     },
     "master-thief": {
         name: "Master Thief",
+        source: "thief",
         description: "Take +1 Finesse (max +3).",
     },
     "nose-for-gold": {
         name: "Nose for Gold",
+        source: "thief",
         description: `When you **figure someone out**, you can always ask (even on a miss):
 - what is the most valuable thing they are carrying?
 When you **read a tense situation**, you can always ask (even on a miss):
@@ -144,6 +156,7 @@ When you **read a tense situation**, you can always ask (even on a miss):
     // Tinker Moves
     "toolbox": {
         name: "Toolbox",
+        source: "tinker",
         description: `You have a kit of tools and supplies with which you work on long-term projects. Choose two features:
 *assorted scrap wood, assorted gears and springs, esoteric hand tools, manuals, assorted medicines, portable alchemy kit, sewing kit, cookware, minor explosives*
 Choose one drawback:
@@ -152,14 +165,17 @@ When you **open up your toolkit and dedicate yourself to making a thing or to ge
     },
     "repair": {
         name: "Repair",
+        source: "tinker",
         description: "When you **repair destroyed personal equipment with your toolbox**, the GM will set one condition as per the toolbox move. Fulfill it, and clear all wear for that equipment. When you **repair damaged personal equipment with your toolkit**, you do it as long as you spend depletion or value, 1 for 1, for each box of wear you clear.",
     },
     "big-pockets": {
         name: "Big Pockets",
+        source: "tinker",
         description: "Take two extra boxes of depletion."
     },
     "jury-rig": {
         name: "Jury Rig",
+        source: "tinker",
         description: `When you **create a makeshift device on the fly**, roll with Cunning. On a hit, you create a device that works once, then breaks. On a 10+, choose one:
 - It works exceptionally well
 - You get an additional use out of it
@@ -167,48 +183,59 @@ On a miss, the device works, but it has an unintended side effect that the GM wi
     },
     "nimble-mind": {
         name: "Nimble Mind",
+        source: "tinker",
         description: "When you **attempt roguish feats** involving mechanisms or locks, mark depletion to roll with Cunning instead of Finesse."
     },
     "dismantle": {
         name: "Dismantle",
+        source: "tinker",
         description: "When you **dismantle a broken or disabled piece of equipment or machinery**, clear 2 depletion boxes.",
     },
     // Vagrant Moves
     "instigator": {
         name: "Instigator",
+        source: "vagrant",
         description: "When you **trick an NPC** into fighting another NPC, you can remove one option from the 7-9 list—they cannot choose that option instead of doing what you want.",
     },
     "pleasant-facade": {
         name: "Pleasant Facade",
+        source: "vagrant",
         description: "When you **suck up to or otherwise butter up an unsuspecting NPC**, roll with Charm. On a 10+, hold 3. On a 7-9, hold 2. Spend your hold 1 for 1 to deflect their suspicion or aggression away from you onto someone or something else. On a miss, your attempts at flattery are suspicious—they’re going to keep their eye on you.",
     },
     "desperate-smile": {
         name: "Desperate Smile",
+        source: "vagrant",
         description: "When you **trust fate** to see you through by begging, pleading, or abasing yourself, roll with Charm instead of Luck.",
     },
     "charm-offensive": {
         name: "Charm Offensive",
+        source: "vagrant",
         description: "When you **play upon an enemy’s insecurities, concerns, or fears to distract them with words during a fight**, roll with Cunning. On a hit, you create an opening for yourself—make any available weapon move against them at +1, or strike quickly and deal injury to them. On a 7-9, you also tick them off; they aren’t listening to you anymore, no matter what you do, until the situation drastically changes. On a miss, you infuriate them—they come at you, hard, and you’re not prepared.",
     },
     "lets-play": {
         name: "Let's Play",
+        source: "vagrant",
         description: "When you **play a game of skill and wit to loosen another’s tongue**, roll with Charm. On a hit, they let slip something useful or valuable. On a 7-9, you have to lose the game to get them there; mark one depletion. On a miss, they’re better than you ever thought; either mark one depletion and cut your losses, or mark three depletion and they’ll start talking.",
     },
     "pocket-sand": {
         name: "Pocket Sand",
+        source: "vagrant",
         description: "Take the weapon skill Confuse Senses. This does not count against the maximum number of weapon skills you can take. When you **throw something to confuse an opponent’s senses at close or intimate range**, roll with Cunning instead of Finesse.",
     },
     // Adventurer Moves
     "sterling-reputation": {
         name: "Sterling Reputation",
+        source: "adventurer",
         description: "Whenever you **mark any amount of prestige with a faction**, mark one additional prestige. When you **mark any amount of notoriety with a faction**, you can instead clear an equivalent amount of marked prestige.",
     },
     "subduing-strikes": {
         name: "Subduing Strikes",
+        source: "adventurer",
         description: "When you **aim to subdue an enemy quickly and nonlethally**, you can **engage sword to sword** with Cunning instead of Might. You cannot choose to inflict serious harm if you do.",
     },
     "talon-on-the-pulse": {
         name: "Talon on the Pulse",
+        source: "adventurer",
         description: `When you gather information about the goings-on in a clearing, roll with Cunning. On a 10+, ask 3. On a 7-9, ask 2.
 - Who holds power in this clearing?
 - Who is the local dissident?
@@ -219,6 +246,7 @@ On a miss, your questions tip off someone dangerous.`,
     },
     "orator": {
         name: "Orator",
+        source: "adventurer",
         description: `When you **give a speech to interested denizens of a clearing**, say what you are motivating them to do and roll with Charm. On a hit, they will move to do it as they see fit. On a 10+, choose 2. On a 7-9, choose 1.
 - They don’t try to take your intent too far
 - They don’t disband at the first sign of real resistance
@@ -227,36 +255,86 @@ On a miss, they twist your message in unpredictable ways.`,
     },
     "well-read": {
         name: "Well-Read",
+        source: "adventurer",
         description: "Take +1 Cunning (max +3).",
     },
     "fast-friends": {
         name: "Fast Friends",
+        source: "adventurer",
         description: "When you try to **befriend an NPC you’ve just met by matching their personality**, body language, and desires, mark exhaustion and roll with Cunning. On a hit, they’ll look upon you favorably—ask them any one non-compromising question and they’ll answer truthfully, or request a simple favor and they’ll do it for you. On a 10+, they really like you—they’ll share a valuable secret or grant you a serious favor instead. On a miss, you read them totally wrong, and their displeasure costs you.",
     },
     // Harrier Moves
     "cross-country": {
         name: "Cross Country",
+        source: "harrier",
         description: "Take one extra box of exhaustion. When **your exhaustion track is full and you must mark exhaustion**, you may choose to mark an equivalent amount of injury instead of being removed from the situation or going unconscious.",
     },
     "fleet-of-foot-and-hand": {
         name: "Fleet of Foot and Hand",
+        source: "harrier",
         description: "Take +1 Finesse (max +3).",
     },
     "dont-shoot-the-messenger": {
         name: "Don't Shoot the Messenger",
+        source: "harrier",
         description: "Take the Counterfeit roguish feat. (It does not count against your maximum.) When you pretend to be an innocuous messenger carrying a missive of import to **trick** someone, roll with Luck instead of Cunning.",
     },
     "parkour": {
         name: "Parkour",
+        source: "harrier",
         description: "When you **dash your way through a chaotic scene or fight**, roll with Finesse. On a 10+, hold 3. On a 7-9, hold 2. Spend your hold 1-for-1 to dash to something within sight and reach without being stopped, or to dash away from something nearby without being stopped. You can dash away from an enemy even at the moment they attack. On a miss, your surroundings trip you up, and you’re caught in place while danger closes in.",
     },
     "traveller-extraordinaire": {
         name: "Traveller Extraordinaire",
+        source: "harrier",
         description: "When you **travel along the paths to another clearing**, you can always give +1 to the roll or clear 2-exhaustion, your choice. When you **travel through the forest to another clearing**, you can always give +1 to the roll or clear 2-depletion, your choice. In both cases, before you arrive at the next clearing, you can ask the GM any two questions about the next clearing, based on what you remember from your last time through."
     },
     "smugglers-path": {
         name: "Smuggler's Path",
+        source: "harrier",
         description: "You’ve got a good sense for finding secret paths and doors. When you **spend time looking for a secret way in or out of a place that might have one**, mark exhaustion and roll with Luck. On a hit, you find a hidden path—the GM will detail it and to where it leads. On a 10+, there’s something along or inside the path of value to you—the GM will tell you what. On a miss, you find a secret path...and someone else is using it right this second. They probably won’t be happy you found their secret."
     },
+    // Ronin Moves
+    "always-armed": {
+        name: "Always Armed",
+        source: "ronin",
+        description: "Take the weapon skill Improvise a Weapon (it does not count against your limit). When you deal harm with an improvised weapon, deal +1 harm.",
+    },
+    "knowing-a-lords-will": {
+        name: "Knowing a Lord's Will",
+        source: "ronin",
+        description: "When you **figure out** a denizen of status, authority, or power, roll with Might instead of Charm. When you **trick** a denizen of status, authority, or power by playing subordinate, roll with Might instead of Cunning.",
+    },
+    "well-mannered": {
+        name: "Well-Mannered",
+        source: "ronin",
+        description: `When you **enter a social environment dependent on manners and etiquette**, roll with Cunning. On a 10+, hold 3. On a 7-9, hold 2. Lose all hold when you leave or when social rules fall apart. Spend hold 1-for-1 to:
+- Cover up a social faux pas on behalf of you or an ally; clear 1 exhaustion.
+- Call out someone else’s social faux pas; inflict 1-morale harm on them.
+- Charm someone; take +1 ongoing to speak to them while you have hold.
+- Demonstrate your value; mark prestige with a powerful denizen’s faction.
+On a miss, the rules of etiquette here are far different from what you expected; mark exhaustion as you commit a gravely impolite error.`,
+    },
+    "fealty": {
+        name: "Fealty",
+        source: "ronin",
+        description: "When you **commit yourself to the cause of someone you deem worthy**, swear an oath to them stating what task you will complete on their behalf. Mark exhaustion to reroll a move made in pursuit of that task. You cannot commit yourself to another cause until you accomplish the first, or break your oath. If you break your oath, fill your exhaustion track and mark 4 notoriety with the faction whose trust you betrayed. If you fulfill your oath, mark 4 prestige with the faction whose trust you kept.",
+    },
+    "the-rules-of-war": {
+        name: "The Rules of War",
+        source: "ronin",
+        description: `When you call upon a reasonable foe to uphold a rule of war, roll with Might. On a hit, they feel obliged; choose one below they must follow. On a 7-9, they choose one that you must follow; disobey, and the obligation ends.
+- Show mercy to surrendering foes and prisoners
+- Refrain from underhanded tactics in a fight
+- Face each other without aid, back-up, or assistance
+- Keep the violence away from the unarmed or innocent
+- Fight to surrender or subdual, without retreat
+On a miss, they feel no obligation to your ideas of war; prepare for a brutal lesson in the rules they adhere to.`,
+    },
+    "always-watching": {
+        name: "Always Watching",
+        source: "ronin",
+        description: "Take +1 Cunning (max +3)."
+    }
 };
 exports.default = moves;

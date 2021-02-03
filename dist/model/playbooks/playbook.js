@@ -11,6 +11,7 @@ const tinker_1 = __importDefault(require("./tinker"));
 const vagrant_1 = __importDefault(require("./vagrant"));
 const adventurer_1 = __importDefault(require("./adventurer"));
 const harrier_1 = __importDefault(require("./harrier"));
+const ronin_1 = __importDefault(require("./ronin"));
 const playbooks = {
     arbiter: arbiter_1.default,
     ranger: ranger_1.default,
@@ -20,5 +21,6 @@ const playbooks = {
     vagrant: vagrant_1.default,
     adventurer: adventurer_1.default,
     harrier: harrier_1.default,
+    ronin: ronin_1.default,
 };
 exports.default = playbooks;
