@@ -58,6 +58,7 @@ import thief from "./thief";
 import tinker from "./tinker";
 import vagrant from "./vagrant";
 import adventurer from "./adventurer";
+import harrier from "./harrier";
 const playbooks = {
   arbiter,
   ranger,
@@ -66,6 +67,7 @@ const playbooks = {
   tinker,
   vagrant,
   adventurer,
+  harrier,
 } as const;
 
 export default playbooks;

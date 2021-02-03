@@ -261,6 +261,32 @@ On a miss, they twist your message in unpredictable ways.`,
     name: "Fast Friends",
     description: "When you try to **befriend an NPC you’ve just met by matching their personality**, body language, and desires, mark exhaustion and roll with Cunning. On a hit, they’ll look upon you favorably—ask them any one non-compromising question and they’ll answer truthfully, or request a simple favor and they’ll do it for you. On a 10+, they really like you—they’ll share a valuable secret or grant you a serious favor instead. On a miss, you read them totally wrong, and their displeasure costs you.",
   },
+  
+  // Harrier Moves
+  "cross-country": {
+    name: "Cross Country",
+    description: "Take one extra box of exhaustion. When **your exhaustion track is full and you must mark exhaustion**, you may choose to mark an equivalent amount of injury instead of being removed from the situation or going unconscious.",
+  },
+  "fleet-of-foot-and-hand": {
+    name: "Fleet of Foot and Hand",
+    description: "Take +1 Finesse (max +3).",
+  },
+  "dont-shoot-the-messenger": {
+    name: "Don't Shoot the Messenger",
+    description: "Take the Counterfeit roguish feat. (It does not count against your maximum.) When you pretend to be an innocuous messenger carrying a missive of import to **trick** someone, roll with Luck instead of Cunning.",
+  },
+  "parkour": {
+    name: "Parkour",
+    description: "When you **dash your way through a chaotic scene or fight**, roll with Finesse. On a 10+, hold 3. On a 7-9, hold 2. Spend your hold 1-for-1 to dash to something within sight and reach without being stopped, or to dash away from something nearby without being stopped. You can dash away from an enemy even at the moment they attack. On a miss, your surroundings trip you up, and you’re caught in place while danger closes in.",
+  },
+  "traveller-extraordinaire": {
+    name: "Traveller Extraordinaire",
+    description: "When you **travel along the paths to another clearing**, you can always give +1 to the roll or clear 2-exhaustion, your choice. When you **travel through the forest to another clearing**, you can always give +1 to the roll or clear 2-depletion, your choice. In both cases, before you arrive at the next clearing, you can ask the GM any two questions about the next clearing, based on what you remember from your last time through."
+  },
+  "smugglers-path": {
+    name: "Smuggler's Path",
+    description: "You’ve got a good sense for finding secret paths and doors. When you **spend time looking for a secret way in or out of a place that might have one**, mark exhaustion and roll with Luck. On a hit, you find a hidden path—the GM will detail it and to where it leads. On a 10+, there’s something along or inside the path of value to you—the GM will tell you what. On a miss, you find a secret path...and someone else is using it right this second. They probably won’t be happy you found their secret."
+  },
 } as const;
 
 export default moves;
