@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tinkerData = {
     id: "tinker",
-    name: "tinker",
+    name: "Tinker",
     blurb: "You are an adept, clever vagabond, interested in mechanisms and craftsmanship, perhaps possessed of ideas that separate you from those around you.",
     demeanors: ["Hopeful", "Cheerful", "Inquisitive", "Cynical"],
     drives: {
