@@ -196,7 +196,42 @@ On a miss, the device works, but it has an unintended side effect that the GM wi
     },
     "pocket-sand": {
         name: "Pocket Sand",
-        description: "Take the weapon skill Confuse Senses. This does not count against the maximum number of weapon skills you can take. When you **throw something to confuse an opponent’s senses at close or intimate range**, roll with Cunning instead of Finesse."
+        description: "Take the weapon skill Confuse Senses. This does not count against the maximum number of weapon skills you can take. When you **throw something to confuse an opponent’s senses at close or intimate range**, roll with Cunning instead of Finesse.",
+    },
+    // Adventurer Moves
+    "sterling-reputation": {
+        name: "Sterling Reputation",
+        description: "Whenever you **mark any amount of prestige with a faction**, mark one additional prestige. When you **mark any amount of notoriety with a faction**, you can instead clear an equivalent amount of marked prestige.",
+    },
+    "subduing-strikes": {
+        name: "Subduing Strikes",
+        description: "When you **aim to subdue an enemy quickly and nonlethally**, you can **engage sword to sword** with Cunning instead of Might. You cannot choose to inflict serious harm if you do.",
+    },
+    "talon-on-the-pulse": {
+        name: "Talon on the Pulse",
+        description: `When you gather information about the goings-on in a clearing, roll with Cunning. On a 10+, ask 3. On a 7-9, ask 2.
+- Who holds power in this clearing?
+- Who is the local dissident?
+- What are the denizens afraid of?
+- What do the denizens hope for?
+- What opportunities exist for enterprising vagabonds?
+On a miss, your questions tip off someone dangerous.`,
+    },
+    "orator": {
+        name: "Orator",
+        description: `When you **give a speech to interested denizens of a clearing**, say what you are motivating them to do and roll with Charm. On a hit, they will move to do it as they see fit. On a 10+, choose 2. On a 7-9, choose 1.
+- They don’t try to take your intent too far
+- They don’t disband at the first sign of real resistance
+- They don’t demand you stand at their head and lead
+On a miss, they twist your message in unpredictable ways.`,
+    },
+    "well-read": {
+        name: "Well-Read",
+        description: "Take +1 Cunning (max +3).",
+    },
+    "fast-friends": {
+        name: "Fast Friends",
+        description: "When you try to **befriend an NPC you’ve just met by matching their personality**, body language, and desires, mark exhaustion and roll with Cunning. On a hit, they’ll look upon you favorably—ask them any one non-compromising question and they’ll answer truthfully, or request a simple favor and they’ll do it for you. On a 10+, they really like you—they’ll share a valuable secret or grant you a serious favor instead. On a miss, you read them totally wrong, and their displeasure costs you.",
     },
 };
 exports.default = moves;

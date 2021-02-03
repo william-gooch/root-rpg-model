@@ -2,7 +2,7 @@ import { Playbook } from "./playbook";
 
 const vagrantData: Playbook = {
   id: "vagrant",
-  name: "vagrant",
+  name: "Vagrant",
   blurb: "You are a charming, survivor vagabond, using words to get out of dangerous situations, perhaps even setting possible predators upon each other to keep them away from yourself.",
   demeanors: ["Excited", "Low Key", "Thoughtful", "Angry"],
   drives: {
