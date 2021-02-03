@@ -3,7 +3,7 @@ import { Playbook } from "./playbook";
 const adventurerData: Playbook = {
   id: "adventurer",
   name: "Adventurer",
-  blurb: "You are a peaceful, diplomatic vagabond, making allies from those you aid, perhaps toppling greater powers by forging strong bonds with others.from yourself.",
+  blurb: "You are a peaceful, diplomatic vagabond, making allies from those you aid, perhaps toppling greater powers by forging strong bonds with others.",
   demeanors: ["Charming", "Diplomatic", "Agreeable", "Stern"],
   drives: {
     "ambition": true,
