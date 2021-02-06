@@ -67,8 +67,8 @@ const exileData = {
         },
     ],
     connections: {
-        "partner": "I see greatness in ### that I wish to nurture...and perhaps turn to my own purposes. What is it about them that inspires me so?",
-        "friend": "### sheltered me in the earliest days of my exile when I was at my most vulnerable. Why did they offer me such kindness in my moment of need?",
+        "protector": "I see greatness in ### that I wish to nurture...and perhaps turn to my own purposes. What is it about them that inspires me so?",
+        "family": "### sheltered me in the earliest days of my exile when I was at my most vulnerable. Why did they offer me such kindness in my moment of need?",
     },
     initialStats: {
         "Charm": +1,

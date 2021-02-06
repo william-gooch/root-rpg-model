@@ -41,6 +41,7 @@ const ronin_1 = __importDefault(require("./ronin"));
 // Travelers and Outsiders
 const chronicler_1 = __importDefault(require("./chronicler"));
 const exile_1 = __importDefault(require("./exile"));
+const seeker_1 = __importDefault(require("./seeker"));
 const playbooks = {
     arbiter: arbiter_1.default,
     ranger: ranger_1.default,
@@ -53,5 +54,6 @@ const playbooks = {
     ronin: ronin_1.default,
     chronicler: chronicler_1.default,
     exile: exile_1.default,
+    seeker: seeker_1.default,
 };
 exports.default = playbooks;

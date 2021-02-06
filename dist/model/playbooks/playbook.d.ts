@@ -72,5 +72,6 @@ declare const playbooks: {
     readonly ronin: Playbook;
     readonly chronicler: Playbook;
     readonly exile: Playbook;
+    readonly seeker: Playbook;
 };
 export default playbooks;

@@ -434,6 +434,45 @@ On a hit, your exile has done little to diminish their respect for you; they off
     description: "You gain the roguish feat Counterfeit (it does not count against your maximum for advancement). When you **attempt a roguish feat** to produce counterfeit documents using your intimate knowledge of your home faction’s politics and procedures, mark notoriety with that faction to make the move as if you had rolled a 12+.",
     source: "exile"
   },
+
+  // Seeker Moves
+  "word-on-the-street": {
+    name: "Word on the Street",
+    description: "When you **spend time in a clearing talking with locals**, roll with Finesse. On a hit, you catch wind of a nearby unexplored wonder or ruin; someone promises to take you to it for a fair fee (1-value). On a 7-9, the dangers make their price steeper—an additional 1-value of coin or gear. On a miss, the location is under threat—soon it will be plundered, destroyed, or claimed by another power.",
+    source: "seeker",
+  },
+  "never-lost": {
+    name: "Never Lost",
+    description: "Take two additional boxes of injury and depletion you can mark when you confront dangers within a ruin and a +1 ongoing to **trusting fate** and **performing roguish feats** while exploring such ancient locales.",
+    source: "seeker"
+  },
+  "treasurer-hunter": {
+    name: "Treasurer Hunter",
+    description: `When you **sell the treasures you found in a ruin at market**, roll with Cunning. On a hit, you find some buyers. On a 7-9, take 1. On a 10+, both:
+- you get a good price; you get double what such findings are usually worth
+- you are popular; mark two prestige with the controlling faction
+On a miss, someone powerful takes offense at your plunder of local sites.`,
+    source: "seeker"
+  },
+  "adventurer-contract": {
+    name: "Adventurer Contract",
+    description: "When you **try to convince a powerful NPC to supply an exploratory adventure**, roll with Cunning. On a hit, they give you 8-value in resources and depletion—but you must fulfill a request. On a 10+, they ask for something general—more riches, information, a prize or trophy. On a 7-9, they want something specific—a singular treasure, secret knowledge, a lost ritual. On a miss, they mount a competing expedition based on what you have told them.",
+    source: "seeker",
+  },
+  "watch-the-signs": {
+    name: "Watch the Signs",
+    description: `When you first **attune yourself to a ruin or mysterious site by taking in its signs**, symbols, particular traits, and layout, roll with Cunning. On a 10+, hold 3. On a 7-9, hold 2. On a miss, you may mark an exhaustion to hold 1. While within that ruin or mysterious site, you can spend your hold 1 for 1 to:Identify the quickest path to the closest valuable treasure or knowledge.
+- Disarm a trap or overcome a natural hazard without cost.
+- Name a character within reach about to suffer harm; you suffer it instead.
+- Name a character in the ruin; you cross the distance to them instantly.
+- Take cover in the ruin; ignore all harm from a single attack or catastrophe`,
+    source: "seeker",
+  },
+  "unstable-ground": {
+    name: "Unstable Ground",
+    description: "When you use a rough or chaotic environment—slippery rocks, a crowded market, etc—to gain an advantage over your opponents in a fight, you can mark exhaustion to **grapple** with them using Finesse instead of Might.",
+    source: "seeker",
+  }
 } as const;
 
 export default moves;

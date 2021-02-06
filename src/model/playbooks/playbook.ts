@@ -97,6 +97,7 @@ import ronin from "./ronin";
 // Travelers and Outsiders
 import chronicler from "./chronicler";
 import exile from "./exile";
+import seeker from "./seeker";
 
 const playbooks = {
   arbiter,
@@ -110,6 +111,7 @@ const playbooks = {
   ronin,
   chronicler,
   exile,
+  seeker,
 } as const;
 
 export default playbooks;
