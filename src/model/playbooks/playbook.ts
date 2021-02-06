@@ -23,6 +23,13 @@ export interface Playbook {
   name: string;
   blurb: string;
   demeanors: string[];
+  background: {
+    [key: string]: {
+      question: string;
+      options?: string[];
+      faction?: boolean;
+    };
+  }
   drives: { [key in keyof typeof drives]?: boolean };
   natures: Nature[];
   connections: { [key in keyof typeof connections]?: string };
@@ -51,6 +58,31 @@ export interface Playbook {
   startingEquipmentValue: number;
 }
 
+export const defaultBackground: Playbook["background"] = {
+  "where-home": {
+    question: "Where do you call home?",
+    options: [
+      "### clearing",
+      "the forest",
+      "a place far from here",
+    ],
+  },
+  "why-vagabond": {
+    question: "Why are you a vagabond?",
+  },
+  "whom-left-behind": {
+    question: "Whom have you left behind?",
+  },
+  "faction-served": {
+    question: "Which faction have you served the most? (mark two prestige for appropriate group)",
+    faction: true,
+  },
+  "faction-enmity": {
+    question: "With which faction have you earned a special enmity?(mark one notoriety forappropriate group)",
+    faction: true,
+  },
+}
+
 // Base Game
 import arbiter from "./arbiter";
 import ranger from "./ranger";
@@ -64,6 +96,7 @@ import ronin from "./ronin";
 
 // Travelers and Outsiders
 import chronicler from "./chronicler";
+import exile from "./exile";
 
 const playbooks = {
   arbiter,
@@ -76,6 +109,7 @@ const playbooks = {
   harrier,
   ronin,
   chronicler,
+  exile,
 } as const;
 
 export default playbooks;

@@ -1,10 +1,34 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const playbook_1 = require("./playbook");
 const scoundrelData = {
     id: "scoundrel",
     name: "Scoundrel",
     blurb: "You are a lucky, dangerous vagabond, acting more as destroyer and troublemaker than anything else, perhaps creating chaos and destruction for its own sake.",
     demeanors: ["Shifty", "Slimy", "Straightforward", "Naive"],
+    background: {
+        ...playbook_1.defaultBackground,
+        "why-vagabond": {
+            question: "Why are you a vagabond?",
+            options: [
+                "I am on the run for a destructive crime",
+                "I seek vengeance for my suffering",
+                "I wish to defeat a faction",
+                "I am mistrusted by other denizens",
+                "I want to be free from society's bonds",
+            ]
+        },
+        "whom-left-behind": {
+            question: "Whom have you left behind?",
+            options: [
+                "my teacher",
+                "my family",
+                "my loved one",
+                "my only defender",
+                "my best friend",
+            ]
+        },
+    },
     drives: {
         "chaos": true,
         "thrills": true,

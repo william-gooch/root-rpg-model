@@ -30,11 +30,9 @@ export interface Character {
     demeanor: string;
 
     // Background
-    backgroundWhere: string;
-    backgroundWhy: string;
-    backgroundWho: string;
-    backgroundFactionServed: string;
-    backgroundFactionEnmity: string;
+    background: {
+        [key: string]: string;
+    };
 
     drives: {
         -readonly [name in keyof typeof drives]?: boolean;
@@ -66,11 +64,7 @@ export const fromPlaybook = (playbook: Playbook): Character => {
         details: "",
         demeanor: "",
 
-        backgroundWhere: "",
-        backgroundWhy: "",
-        backgroundWho: "",
-        backgroundFactionServed: "",
-        backgroundFactionEnmity: "",
+        background: Object.fromEntries(Object.entries(playbook.background).map(([name, question]) => [name, ""])),
 
         drives: {},
         nature: "",

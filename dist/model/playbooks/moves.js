@@ -366,6 +366,41 @@ On a miss, they feel no obligation to your ideas of war; prepare for a brutal le
         name: "Dedicated Scholar",
         description: "Take an extra box of exhaustion. When you **acquire a new tome or scroll documenting the history of the Woodland**, clear your exhaustion track.",
         source: "chronicler",
-    }
+    },
+    // Exile Moves
+    "known-by-all": {
+        name: "Known by All",
+        description: `When you **first encounter an important NPC from the faction that exiled you**, you may declare them an old ally—choosing one from the list below instead of meeting someone important—and roll.
+- If they merely know you by your former reputation, take a +1.
+- If you have worked closely with them before, take a +2.
+- If they were a close friend or loyal servitor, take a +3.
+On a hit, your exile has done little to diminish their respect for you; they offer you whatever comfort and aid they can, even to the point of risking their own reputation and safety. On a 7-9, they can only assist you if they can cover their tracks when you leave; mark as much notoriety with their faction as you added to your roll as they spread a story of the terrible treatment they endured when they met you. On a miss, your attempts to contact your old network only reveal your position and desperation; mark as much notoriety as you added to your roll and those who hunt you will surely be here soon.`,
+        source: "exile",
+    },
+    "above-it-all": {
+        name: "Above It All",
+        description: "When you **trick an NPC** into granting you access or information by pretending to be a high-ranking member of their faction, roll with Charm instead of Cunning.",
+        source: "exile",
+    },
+    "i-bring-you": {
+        name: "I Bring You...",
+        description: "When you **spend time talking to the denizens of a new clearing**, mark exhaustion to learn what vital resource or fugitive the powers-that-be currently seek. When you deliver a vital resource or prisoner to a faction, you may **ask for a favor** from the faction as if you rolled a 12+. If your reputation with that faction is already +2 or greater, you may instead **sway the NPC** whose cause you most directly benefited with your contribution as if you rolled a 12+.",
+        source: "exile",
+    },
+    "greatest-of-the-age": {
+        name: "Greatest of the Age",
+        description: "When you engage an enemy in melee, you take all four options and one for double effect when you roll a 12+.",
+        source: "exile",
+    },
+    "born-to-be-a-king": {
+        name: "Born to Be a King",
+        description: "Take +1 Charm (max +3).",
+        source: "exile",
+    },
+    "fancy-paper": {
+        name: "Fancy Paper",
+        description: "You gain the roguish feat Counterfeit (it does not count against your maximum for advancement). When you **attempt a roguish feat** to produce counterfeit documents using your intimate knowledge of your home faction’s politics and procedures, mark notoriety with that faction to make the move as if you had rolled a 12+.",
+        source: "exile"
+    },
 };
 exports.default = moves;

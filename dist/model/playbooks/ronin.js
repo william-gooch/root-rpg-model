@@ -1,10 +1,34 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const playbook_1 = require("./playbook");
 const roninData = {
     id: "ronin",
     name: "Ronin",
     blurb: "You are a skilled, willful vagabond, formerly a servant of a lord in a different land, now masterless. You came to the Woodland to live as a free vagabond.",
     demeanors: ["Gruff", "Polite", "Direct", "Dangerous"],
+    background: {
+        ...playbook_1.defaultBackground,
+        "why-vagabond": {
+            question: "Why are you a vagabond?",
+            options: [
+                "I want to build a masterless life",
+                "I seek a cause to redeem myself",
+                "I aim to bring a hunted foe to justice",
+                "I am hunted by old foes",
+                "I need freedom to fulfill my master's last wish",
+            ]
+        },
+        "what-happened-last-master": {
+            question: "What happened to your last master?",
+            options: [
+                "assassination",
+                "unjust imprisonment",
+                "disappearance",
+                "justified overthrow",
+                "betrayal",
+            ]
+        },
+    },
     drives: {
         "principles": true,
         "revenge": true,

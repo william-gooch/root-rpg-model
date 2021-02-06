@@ -1,10 +1,34 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const playbook_1 = require("./playbook");
 const adventurerData = {
     id: "adventurer",
     name: "Adventurer",
     blurb: "You are a peaceful, diplomatic vagabond, making allies from those you aid, perhaps toppling greater powers by forging strong bonds with others.",
     demeanors: ["Charming", "Diplomatic", "Agreeable", "Stern"],
+    background: {
+        ...playbook_1.defaultBackground,
+        "why-vagabond": {
+            question: "Why are you a vagabond?",
+            options: [
+                "I want to help the Woodland",
+                "I want to explore the Woodland",
+                "I believe the current factions should be overturned",
+                "I must keep a promise to a loved one",
+                "I want freedom from society's constraints",
+            ]
+        },
+        "whom-left-behind": {
+            question: "Whom have you left behind?",
+            options: [
+                "my mentor",
+                "my family",
+                "my loved one",
+                "my student",
+                "my greatest ally",
+            ]
+        },
+    },
     drives: {
         "ambition": true,
         "clean-paws": true,

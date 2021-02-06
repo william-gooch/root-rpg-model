@@ -1,10 +1,33 @@
-import { Playbook } from "./playbook";
+import { defaultBackground, Playbook } from "./playbook";
 
 const rangerData: Playbook = {
   id: "ranger",
   name: "Ranger",
   blurb: "You are a capable, stealthy vagabond, centered on the forests that fill the Woodland between the clearings, more interested in the wilds than in the company of other Woodland denizens or their society.",
   demeanors: ["Terse", "Mistrusting", "Polite", "Kind"],
+  background: {
+    ...defaultBackground,
+    "why-vagabond": {
+      question: "Why are you a vagabond?",
+      options: [
+        "I dislike the hypocrisy of society",
+        "I am mistrusted by other denizens",
+        "I want to wander the Woodland",
+        "I need to find and save a loved one",
+        "I seek escape from the wars",
+      ]
+    },
+    "whom-left-behind": {
+      question: "Whom have you left behind?",
+      options: [
+        "my commander",
+        "my family",
+        "my best friend",
+        "my student",
+        "no one—I lost those who mattered to me. (mark notoriety with the faction responsible)",
+      ]
+    },
+  },
   drives: {
     "discovery": true,
     "freedom": true,

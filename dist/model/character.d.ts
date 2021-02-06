@@ -30,11 +30,9 @@ export interface Character {
     species: string;
     details: string;
     demeanor: string;
-    backgroundWhere: string;
-    backgroundWhy: string;
-    backgroundWho: string;
-    backgroundFactionServed: string;
-    backgroundFactionEnmity: string;
+    background: {
+        [key: string]: string;
+    };
     drives: {
         -readonly [name in keyof typeof drives]?: boolean;
     };

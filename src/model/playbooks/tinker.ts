@@ -1,10 +1,33 @@
-import { Playbook } from "./playbook";
+import { defaultBackground, Playbook } from "./playbook";
 
 const tinkerData: Playbook = {
   id: "tinker",
   name: "Tinker",
   blurb: "You are an adept, clever vagabond, interested in mechanisms and craftsmanship, perhaps possessed of ideas that separate you from those around you.",
   demeanors: ["Hopeful", "Cheerful", "Inquisitive", "Cynical"],
+  background: {
+    ...defaultBackground,
+    "why-vagabond": {
+      question: "Why are you a vagabond?",
+      options: [
+        "I refuse to keep my ideas to myself",
+        "I need to rebuild my workshop anew in a safe place",
+        "I crave adventure",
+        "I need to find and save my family",
+        "I need to keep my most dangerous design safe",
+      ]
+    },
+    "whom-left-behind": {
+      question: "Whom have you left behind?",
+      options: [
+        "my mentor",
+        "my family",
+        "my best friend",
+        "my loved one",
+        "my leader",
+      ]
+    },
+  },
   drives: {
     "greed": true,
     "ambition": true,

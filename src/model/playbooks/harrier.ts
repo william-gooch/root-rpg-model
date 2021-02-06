@@ -1,10 +1,33 @@
-import { Playbook } from "./playbook";
+import { defaultBackground, Playbook } from "./playbook";
 
 const harrierData: Playbook = {
   id: "harrier",
   name: "Harrier",
   blurb: "You are a quick, enterprising vagabond, racing easily from building to building and clearing to clearing without anything stopping you, perhaps finding yourself in places others would rather keep secret or hidden.",
   demeanors: ["Excited", "Energetic", "Passionate", "Flighty"],
+  background: {
+    ...defaultBackground,
+    "why-vagabond": {
+      question: "Why are you a vagabond?",
+      options: [
+        "I want to fight for Woodland freedom",
+        "I am chasing a loved one",
+        "I am on the run for my crimes",
+        "I feel a deep wanderlust",
+        "I am on the run from a commitment at home",
+      ]
+    },
+    "whom-left-behind": {
+      question: "Whom have you left behind?",
+      options: [
+        "my teacher",
+        "my family",
+        "my loved one",
+        "my idol",
+        "my best friend",
+      ]
+    },
+  },
   drives: {
     "crime": true,
     "discovery": true,

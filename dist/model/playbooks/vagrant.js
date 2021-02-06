@@ -1,10 +1,34 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const playbook_1 = require("./playbook");
 const vagrantData = {
     id: "vagrant",
     name: "Vagrant",
     blurb: "You are a charming, survivor vagabond, using words to get out of dangerous situations, perhaps even setting possible predators upon each other to keep them away from yourself.",
     demeanors: ["Excited", "Low Key", "Thoughtful", "Angry"],
+    background: {
+        ...playbook_1.defaultBackground,
+        "why-vagabond": {
+            question: "Why are you a vagabond?",
+            options: [
+                "I am being hunted by a powerful vagabond",
+                "I can't settle down with the denizen I truly love",
+                "I seek to depose corrupt and dangerous leaders",
+                "I feel deep wanderlust",
+                "I am on the run for my lies",
+            ]
+        },
+        "whom-left-behind": {
+            question: "Whom have you left behind?",
+            options: [
+                "my partner in crime",
+                "my family",
+                "my loved one",
+                "my boss",
+                "my best friend",
+            ]
+        },
+    },
     drives: {
         "chaos": true,
         "thrills": true,

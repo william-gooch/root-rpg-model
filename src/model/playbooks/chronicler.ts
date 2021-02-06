@@ -1,10 +1,33 @@
-import { Playbook } from "./playbook";
+import { defaultBackground, Playbook } from "./playbook";
 
 const chroniclerData: Playbook = {
   id: "chronicler",
   name: "Chronicler",
   blurb: "You are a sage who honors history and the written word, keeper of lost, banned, or forbidden texts of truths the great Woodland powers would rather be forgotten.",
   demeanors: ["Clumsy", "Endearing", "Sly", "Thoughtful"],
+  background: {
+    ...defaultBackground,
+    "why-vagabond": {
+      question: "Why are you a vagabond?",
+      options: [
+        "I seek the Woodland's secrets",
+        "I swore an oath to record true, unbiased history",
+        "I want to spread knowledge throughout the Woodland",
+        "I aim to change the Woodland by sharing its history",
+        "I crave adventure",
+      ]
+    },
+    "who-inspired-history": {
+      question: "",
+      options: [
+        "my parents",
+        "an older sibling",
+        "an old mentor",
+        "a lover or friend",
+        "a formal school",
+      ]
+    },
+  },
   drives: {
     "justice": true,
     "discovery": true,
@@ -23,7 +46,7 @@ const chroniclerData: Playbook = {
   ],
   connections: { 
     "partner": "### and I exposed a dark secret of a faction, leading to a meaningful political change. What was it? And which member of that faction hates us for it?",
-    "friend": "I think ### sees the truth of the world, and I value their perspective deeply. What kinds of information do they see that I often overlook?",
+    "peer": "I think ### sees the truth of the world, and I value their perspective deeply. What kinds of information do they see that I often overlook?",
   },
   initialStats: {
     "Charm": -1,

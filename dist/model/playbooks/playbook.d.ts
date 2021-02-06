@@ -19,6 +19,13 @@ export interface Playbook {
     name: string;
     blurb: string;
     demeanors: string[];
+    background: {
+        [key: string]: {
+            question: string;
+            options?: string[];
+            faction?: boolean;
+        };
+    };
     drives: {
         [key in keyof typeof drives]?: boolean;
     };
@@ -52,6 +59,7 @@ export interface Playbook {
     };
     startingEquipmentValue: number;
 }
+export declare const defaultBackground: Playbook["background"];
 declare const playbooks: {
     readonly arbiter: Playbook;
     readonly ranger: Playbook;
@@ -63,5 +71,6 @@ declare const playbooks: {
     readonly harrier: Playbook;
     readonly ronin: Playbook;
     readonly chronicler: Playbook;
+    readonly exile: Playbook;
 };
 export default playbooks;

@@ -1,10 +1,34 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const playbook_1 = require("./playbook");
 const arbiterData = {
     id: "arbiter",
     name: "Arbiter",
     blurb: "You are a powerful, obstinate vagabond, serving as somewhere between a mercenary and a protector, perhaps taking sides too easily in the greater conflict between the factions.",
     demeanors: ["Intimidating", "Honest", "Brusque", "Open"],
+    background: {
+        ...playbook_1.defaultBackground,
+        "why-vagabond": {
+            question: "Why are you a vagabond?",
+            options: [
+                "I’m being hunted by a powerful official",
+                "I wish to make up for a past transgression",
+                "I want to fight injustice",
+                "I must clear my tarnished name",
+                "I have been exiled from most clearings",
+            ]
+        },
+        "whom-left-behind": {
+            question: "Whom have you left behind?",
+            options: [
+                "my peer and friend",
+                "my family",
+                "my loved one",
+                "my ward",
+                "my commander",
+            ]
+        },
+    },
     drives: {
         "justice": true,
         "principles": true,

@@ -1,10 +1,33 @@
-import { Playbook } from "./playbook";
+import { defaultBackground, Playbook } from "./playbook";
 
 const thiefData: Playbook = {
   id: "thief",
   name: "Thief",
   blurb: "You are a cunning, criminal vagabond, capable of stealing even the most well-guarded treasures, perhaps committed to crime and theft for its own sake.",
   demeanors: ["Fast-Talking", "Quiet", "Angry", "Friendly"],
+  background: {
+    ...defaultBackground,
+    "why-vagabond": {
+      question: "Why are you a vagabond?",
+      options: [
+        "I have no better way to get food, water, shelter and money",
+        "I am on the run from \"associates\"",
+        "I am mistrusted by other denizens",
+        "I am pursuing a treasure",
+        "I am being hunted by a powerful official",
+      ]
+    },
+    "whom-left-behind": {
+      question: "Whom have you left behind?",
+      options: [
+        "my partner-in-crime",
+        "my family",
+        "my loved one",
+        "my protector",
+        "my benefactor",
+      ]
+    },
+  },
   drives: {
     "freedom": true,
     "greed": true,
