@@ -39,7 +39,10 @@ export interface Character {
     };
     nature: string;
     connections: {
-        -readonly [name in keyof typeof connections]?: string;
+        -readonly [name in keyof typeof connections]?: {
+            name: string;
+            description: string;
+        };
     };
 
     // Reputation
