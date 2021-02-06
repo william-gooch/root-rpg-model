@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+// Base Game
 const arbiter_1 = __importDefault(require("./arbiter"));
 const ranger_1 = __importDefault(require("./ranger"));
 const scoundrel_1 = __importDefault(require("./scoundrel"));
@@ -12,6 +13,8 @@ const vagrant_1 = __importDefault(require("./vagrant"));
 const adventurer_1 = __importDefault(require("./adventurer"));
 const harrier_1 = __importDefault(require("./harrier"));
 const ronin_1 = __importDefault(require("./ronin"));
+// Travelers and Outsiders
+const chronicler_1 = __importDefault(require("./chronicler"));
 const playbooks = {
     arbiter: arbiter_1.default,
     ranger: ranger_1.default,
@@ -22,5 +25,6 @@ const playbooks = {
     adventurer: adventurer_1.default,
     harrier: harrier_1.default,
     ronin: ronin_1.default,
+    chronicler: chronicler_1.default,
 };
 exports.default = playbooks;

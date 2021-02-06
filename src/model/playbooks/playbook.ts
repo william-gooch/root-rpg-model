@@ -51,6 +51,7 @@ export interface Playbook {
   startingEquipmentValue: number;
 }
 
+// Base Game
 import arbiter from "./arbiter";
 import ranger from "./ranger";
 import scoundrel from "./scoundrel";
@@ -60,6 +61,10 @@ import vagrant from "./vagrant";
 import adventurer from "./adventurer";
 import harrier from "./harrier";
 import ronin from "./ronin";
+
+// Travelers and Outsiders
+import chronicler from "./chronicler";
+
 const playbooks = {
   arbiter,
   ranger,
@@ -70,6 +75,7 @@ const playbooks = {
   adventurer,
   harrier,
   ronin,
+  chronicler,
 } as const;
 
 export default playbooks;

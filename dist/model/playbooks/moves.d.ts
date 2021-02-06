@@ -301,5 +301,35 @@ declare const moves: {
         readonly source: "ronin";
         readonly description: "Take +1 Cunning (max +3).";
     };
+    readonly "the-worth-of-a-book": {
+        readonly name: "The Worth of a Book";
+        readonly description: "When you **study your tomes and scrolls to discover old techniques or methods** to solve an intractable problem—curing a deadly disease, ending a drought, legally unseating a leader, etc—decide what you want to change and tell the GM. The GM will give you between 1 to 4 conditions you must fulfill to discover a path forward, including time taken, additional information needed, mentors or translators needed, facilities/tools needed, or the limits of your solution. When you fulfill the conditions, you gain whatever knowledge you were seeking—it’s up to you to put to use.";
+        readonly source: "chronicler";
+    };
+    readonly "an-eye-for-the-real-story": {
+        readonly name: "An Eye for the Real Story";
+        readonly description: "When you **read a tense situation**, mark an exhaustion—even on a miss—to spot a fellow observer who knows more than you might expect. Take a +1 ongoing to convince them to share their secrets with you when you get them in private.";
+        readonly source: "chronicler";
+    };
+    readonly "search-the-records": {
+        readonly name: "Search the Records";
+        readonly description: "When you **examine the documents, records, or assorted notes of an important NPC** (your call), roll with Cunning. On a hit, you discover evidence of their secrets; the GM will tell you who would pay for the information you’ve uncovered. On a 10+, you also take a 12+ instead of rolling the next time you try to **figure them out**. On a miss, your search yields terrible news—someone is acting against you or your interests in an unexpected arena.";
+        readonly source: "chronicler";
+    };
+    readonly loremaster: {
+        readonly name: "Loremaster";
+        readonly description: "When you **consult your knowledge in order to understand a political conflict**, roll with Cunning. On a hit, the GM tells you what information you remember that completes your understanding of the messy situation. On a 10+, you can ask a followup question; the GM will answer honestly. On a miss, something about the situation doesn’t fit the history—the GM will tell you what has radically shifted.";
+        readonly source: "chronicler";
+    };
+    readonly "good-advice": {
+        readonly name: "Good Advice";
+        readonly description: "When you offer an NPC advice about a sticky situation, offer them the best advice you’ve got and roll with cunning. On a hit, they see the wisdom of your suggestion; they have to mark exhaustion or incorporate your advice into their plans. On a 7-9, you let something about your own plans or allegiances slip as you try to help them out. On a miss, the advice angers or offends them; the GM will tell you what local custom you’ve overstepped with your meddling.";
+        readonly source: "chronicler";
+    };
+    readonly "dedicated-scholar": {
+        readonly name: "Dedicated Scholar";
+        readonly description: "Take an extra box of exhaustion. When you **acquire a new tome or scroll documenting the history of the Woodland**, clear your exhaustion track.";
+        readonly source: "chronicler";
+    };
 };
 export default moves;
