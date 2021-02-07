@@ -6,7 +6,14 @@ const roninData: Playbook = {
   blurb: "You are a skilled, willful vagabond, formerly a servant of a lord in a different land, now masterless. You came to the Woodland to live as a free vagabond.",
   demeanors: ["Gruff", "Polite", "Direct", "Dangerous"],
   background: {
-    ...defaultBackground,
+    "where-home": {
+      question: "Where do you call home?",
+      options: [
+        "### clearing",
+        "the forest",
+        "a place far from here",
+      ],
+    },
     "why-vagabond": {
       question: "Why are you a vagabond?",
       options: [
@@ -26,6 +33,14 @@ const roninData: Playbook = {
         "justified overthrow",
         "betrayal",
       ]
+    },
+    "faction-served": {
+      question: "Which faction have you served the most? (mark two prestige for appropriate group)",
+      faction: true,
+    },
+    "faction-enmity": {
+      question: "With which faction have you earned a special enmity?(mark one notoriety forappropriate group)",
+      faction: true,
     },
   },
   drives: {
