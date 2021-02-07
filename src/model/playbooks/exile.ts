@@ -33,7 +33,7 @@ const exileData: Playbook = {
       ],
     },
     "why-vagabond": {
-      question: "Why were you exiled (not killed)?",
+      question: "Why are you a vagabond?",
       options: [
         "I seek a new home in the Woodland",
         "I want to reclaim my prestige",
