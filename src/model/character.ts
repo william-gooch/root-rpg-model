@@ -71,7 +71,7 @@ export const fromPlaybook = (playbook: Playbook): Character => {
 
         drives: {},
         nature: "",
-        connections: Object.fromEntries(Object.entries(playbook.connections).map(([name, blurb]) => [name, ""])),
+        connections: Object.fromEntries(Object.entries(playbook.connections).map(([name, blurb]) => [name, { name: "", description: "" }])),
 
         reputation: factions.map(faction => ({ faction: faction.name, modifier: 0, notoriety: 0, prestige: 0 })),
 

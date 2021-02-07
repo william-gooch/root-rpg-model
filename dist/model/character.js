@@ -12,7 +12,7 @@ exports.fromPlaybook = (playbook) => {
         background: Object.fromEntries(Object.entries(playbook.background).map(([name, question]) => [name, ""])),
         drives: {},
         nature: "",
-        connections: Object.fromEntries(Object.entries(playbook.connections).map(([name, blurb]) => [name, ""])),
+        connections: Object.fromEntries(Object.entries(playbook.connections).map(([name, blurb]) => [name, { name: "", description: "" }])),
         reputation: faction_1.factions.map(faction => ({ faction: faction.name, modifier: 0, notoriety: 0, prestige: 0 })),
         stats: playbook.initialStats,
         harm: {
