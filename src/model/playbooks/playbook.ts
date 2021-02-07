@@ -62,7 +62,7 @@ export const defaultBackground: Playbook["background"] = {
   "where-home": {
     question: "Where do you call home?",
     options: [
-      "### clearing",
+      "__________ clearing",
       "the forest",
       "a place far from here",
     ],
