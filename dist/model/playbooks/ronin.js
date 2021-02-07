@@ -39,7 +39,7 @@ const roninData = {
             faction: true,
         },
         "faction-enmity": {
-            question: "With which faction have you earned a special enmity?(mark one notoriety forappropriate group)",
+            question: "With which faction have you earned a special enmity? (mark one notoriety for appropriate group)",
             faction: true,
         },
     },

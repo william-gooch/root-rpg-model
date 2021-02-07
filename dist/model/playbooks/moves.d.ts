@@ -391,5 +391,95 @@ declare const moves: {
         readonly description: "When you use a rough or chaotic environment—slippery rocks, a crowded market, etc—to gain an advantage over your opponents in a fight, you can mark exhaustion to **grapple** with them using Finesse instead of Might.";
         readonly source: "seeker";
     };
+    readonly diplomat: {
+        readonly name: "Diplomat";
+        readonly description: "You are known across the Woodland as an accomplished diplomat; **you have a track (Diplomat) to reflect your professional reputation**. When you raise your reputation with any faction, raise Diplomat; when you lower your reputation with any faction, lower Diplomat. You cannot lower Diplomat below +0 or raise it above +3.\n- Mark exhaustion to use Diplomat when you ask for a favor or meet someone important for the first time, regardless of the faction of your target.\n- When you persuade or figure out an important NPC while acting on behalf of another—not you or your band—roll with Diplomat instead of Charm.";
+        readonly source: "envoy";
+    };
+    readonly "fancy-meeting-you-here": {
+        readonly name: "Fancy Meeting You Here";
+        readonly description: "When you **carouse in a popular locale**, roll with Luck. On a hit, you meet an affiliate of a powerful NPC (your choice); take a +1 ongoing against them for the scene. On a 10+, they also let a secret slip about the NPC’s plans or offer to introduce you to them on friendly terms. On a miss, someone who is looking for you finds you before you can find a gullible mark.";
+        readonly source: "envoy";
+    };
+    readonly turncoat: {
+        readonly name: "Turncoat";
+        readonly description: "You gain the roguish feat *Blindside* (it does not count against your maximum for advancement). When you **attempt a roguish feat** to blindside someone who trusts you, roll with Cunning instead of Finesse.";
+        readonly source: "envoy";
+    };
+    readonly "a-silvered-tongue": {
+        readonly name: "A Silvered Tongue";
+        readonly description: "Take +1 Cunning (max +3).";
+        readonly source: "envoy";
+    };
+    readonly "trust-in-me": {
+        readonly name: "Trust in Me";
+        readonly description: "When you **soothe or placate an angry NPC**, roll with Cunning. On a hit, you calm their rage. On a 7-9, choose 1. On a 10+, choose 2:\n- They reveal an unexpected vulnerability\n- They hesitate in their fury; you create an opportunity\n- They take you further into their confidenceOn a miss, you can only calm them by redirecting their frustrations.";
+        readonly source: "envoy";
+    };
+    readonly "kiss-the-ring": {
+        readonly name: "Kiss the Ring";
+        readonly description: "When you **exit a meeting with someone rich and powerful**, you can say you pocketed a few of their things and roll with Cunning. On a hit, the GM will tell you what valuable or interesting item you snagged. On a 7-9, what you took will be missed, but not until you are long gone; mark notoriety with that faction. On a miss, they’re going to notice any second now; mark 2-notoriety with that faction and either run or come up with a good excuse, friend.";
+        readonly source: "envoy";
+    };
+    readonly "small-ship": {
+        readonly name: "Small Ship";
+        readonly description: "By default, your ship has a wear track with four boxes. Mark wear when it suffers serious damage or when a move calls for it. When your ship’s wear track is filled you are dead in the water and must be repaired at port. If you must mark wear on your ship but its whole track is full, your ship is lost. If you ever lose the ship the GM may present you with an opportunity to get a new one.";
+        readonly source: "pirate";
+    };
+    readonly "sail-on": {
+        readonly name: "Sail On";
+        readonly description: "When you **travel from clearing to clearing by ship**, mark wear on the ship and roll with Luck. On a hit, you reach the next port; the GM will tell you one friendly denizen you know there. On a 7-9, they are holding a grudge—work it out or offer at least 2-value to let things go. On a miss, you are caught in a dangerous situation along your route before you arrive at port.";
+        readonly source: "pirate";
+    };
+    readonly swashbuckler: {
+        readonly name: "Swashbuckler";
+        readonly description: "When you first charge into battle by swinging, diving, or leaping to **engage an enemy in melee at close range**, roll with Luck instead of Might.";
+        readonly source: "pirate";
+    };
+    readonly "x-marks-the-spot": {
+        readonly name: "X Marks the Spot";
+        readonly description: "When you **try to recall the location of buried treasure in your clearing**, roll with Luck. On a hit, you remember one such cache. On a 7-9, the location is accessible or private, your choice. On a 10+, both. On a miss, you remember the location, but it is guarded, difficult to reach, and very public.";
+        readonly source: "pirate";
+    };
+    readonly "plenty-of-rum": {
+        readonly name: "Plenty of Rum";
+        readonly description: "Once per session, you may **plead with a vagabond** a second time in a session by sharing your rum (mark depletion) with the target of your pleading.";
+        readonly source: "pirate";
+    };
+    readonly "sea-legs": {
+        readonly name: "Sea Legs";
+        readonly description: "When you **attempt a roguish feat** to sneak, hide, or perform acrobatics, roll with Luck instead of Finesse.";
+        readonly source: "pirate";
+    };
+    readonly "eye-for-battle": {
+        readonly name: "Eye for Battle";
+        readonly description: "When you **read a tense situation** just as violence breaks out, roll with Might instead of Cunning.";
+        readonly source: "raider";
+    };
+    readonly ironhide: {
+        readonly name: "Ironhide";
+        readonly description: "Once per session, you can **mark exhaustion to ignore a blow that would usually inflict injury upon you**. You cannot mark exhaustion to avoid injury so long as you could mark wear on your armor to avoid the injury instead.";
+        readonly source: "raider";
+    };
+    readonly "loot-and-plunder": {
+        readonly name: "Loot and Plunder";
+        readonly description: "When you loot a rich area for valuables, roll with Finesse. On a hit, something out of the ordinary catches your eye; claim it and it’s yours. On a 10+ all 3. on a 7-9 choose 1:\n- It is worth a lot of money (+2-value)\n- It is of special value to a particular faction (+4 prestige if traded to them)\n- It is extremely durable (+1-wear)\nOn a miss, you can get your hands on it, but it is sought by dangerous denizens who are all too willing to kill to take it from whoever possesses it.";
+        readonly source: "raider";
+    };
+    readonly "merciful-might": {
+        readonly name: "Merciful Might";
+        readonly description: "When you **try to befriend an NPC you’ve saved from the wrath of another**, spend time helping them further (mark exhaustion) or buy them a drink (mark depletion). Your continued kindness pays dividends; they’ll share a valuable secret or grant you a serious favor.";
+        readonly source: "raider";
+    };
+    readonly "plan-of-attack": {
+        readonly name: "Plan of Attack";
+        readonly description: "When you work out a plan of attack with someone, roll with Might. On a 10+, hold 3. On a 7-9, hold 2. You can spend your hold 1-for-1, regardless of distance, while the plan is being carried out to:\n- Lend a hand; add +1 to someone’s roll (choose after rolling)\n- Soften a blow; reduce by one the harm someone suffers from a single attack\n- Ensure your gear holds; allow someone to ignore marking depletion\nOn a miss, hold 1, but your plan encounters some disastrous opposition right from the start.";
+        readonly source: "raider";
+    };
+    readonly "fearsome-visage": {
+        readonly name: "Fearsome Visage";
+        readonly description: "You can **make a pointed threat** or **publicly draw attention to yourself** as an enemy of a faction when you have a Reputation of 0 or lower with that faction, not just the usual -3 or -2 reputation required. Remember, you roll as if your negative reputation was positive, so a -1 Reputation becomes a +1 for the roll and a 0 remains a 0.";
+        readonly source: "raider";
+    };
 };
 export default moves;

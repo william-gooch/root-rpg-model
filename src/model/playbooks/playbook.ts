@@ -78,7 +78,7 @@ export const defaultBackground: Playbook["background"] = {
     faction: true,
   },
   "faction-enmity": {
-    question: "With which faction have you earned a special enmity?(mark one notoriety forappropriate group)",
+    question: "With which faction have you earned a special enmity? (mark one notoriety for appropriate group)",
     faction: true,
   },
 }
@@ -98,6 +98,9 @@ import ronin from "./ronin";
 import chronicler from "./chronicler";
 import exile from "./exile";
 import seeker from "./seeker";
+import envoy from "./envoy";
+import pirate from "./pirate";
+import raider from "./raider";
 
 const playbooks = {
   arbiter,
@@ -112,6 +115,9 @@ const playbooks = {
   chronicler,
   exile,
   seeker,
+  envoy,
+  pirate,
+  raider,
 } as const;
 
 export default playbooks;

@@ -24,7 +24,7 @@ exports.defaultBackground = {
         faction: true,
     },
     "faction-enmity": {
-        question: "With which faction have you earned a special enmity?(mark one notoriety forappropriate group)",
+        question: "With which faction have you earned a special enmity? (mark one notoriety for appropriate group)",
         faction: true,
     },
 };
@@ -42,6 +42,9 @@ const ronin_1 = __importDefault(require("./ronin"));
 const chronicler_1 = __importDefault(require("./chronicler"));
 const exile_1 = __importDefault(require("./exile"));
 const seeker_1 = __importDefault(require("./seeker"));
+const envoy_1 = __importDefault(require("./envoy"));
+const pirate_1 = __importDefault(require("./pirate"));
+const raider_1 = __importDefault(require("./raider"));
 const playbooks = {
     arbiter: arbiter_1.default,
     ranger: ranger_1.default,
@@ -55,5 +58,8 @@ const playbooks = {
     chronicler: chronicler_1.default,
     exile: exile_1.default,
     seeker: seeker_1.default,
+    envoy: envoy_1.default,
+    pirate: pirate_1.default,
+    raider: raider_1.default,
 };
 exports.default = playbooks;
