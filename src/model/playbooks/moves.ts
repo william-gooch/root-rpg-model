@@ -463,7 +463,7 @@ On a miss, someone powerful takes offense at your plunder of local sites.`,
 - Mark exhaustion to use Diplomat when you ask for a favor or meet someone important for the first time, regardless of the faction of your target.
 - When you persuade or figure out an important NPC while acting on behalf of another—not you or your band—roll with Diplomat instead of Charm.`,
     source: "envoy",
-    extraDefault: { diplomacy: 0 },
+    extraDefault: { diplomat: 0 },
   },
   "fancy-meeting-you-here": {
     name: "Fancy Meeting You Here",

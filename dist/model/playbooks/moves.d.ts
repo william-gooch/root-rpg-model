@@ -372,7 +372,7 @@ declare const moves: {
         readonly description: "You are known across the Woodland as an accomplished diplomat; **you have a track (Diplomat) to reflect your professional reputation**. When you raise your reputation with any faction, raise Diplomat; when you lower your reputation with any faction, lower Diplomat. You cannot lower Diplomat below +0 or raise it above +3.\n- Mark exhaustion to use Diplomat when you ask for a favor or meet someone important for the first time, regardless of the faction of your target.\n- When you persuade or figure out an important NPC while acting on behalf of another—not you or your band—roll with Diplomat instead of Charm.";
         readonly source: "envoy";
         readonly extraDefault: {
-            readonly diplomacy: 0;
+            readonly diplomat: 0;
         };
     };
     readonly "fancy-meeting-you-here": {
