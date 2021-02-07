@@ -1,35 +1,16 @@
-import { Harm } from "../character";
-import { RoguishFeat, WeaponSkill } from "../model";
-import playbooks, { Stat } from "./playbook";
+import playbooks from "./playbook";
 export interface Move {
     name: string;
     description: string;
     source: keyof typeof playbooks;
-    effects?: {
-        stats?: {
-            [stat in Stat]?: number;
-        };
-        harm?: {
-            [harm in keyof Harm]?: number;
-        };
-        weaponSkills?: {
-            [skill in WeaponSkill]?: boolean;
-        };
-        roguishFeats?: {
-            [feat in RoguishFeat]?: boolean;
-        };
-    };
+    extra?: any;
+    extraDefault?: any;
 }
 declare const moves: {
     readonly brute: {
         readonly name: "Brute";
         readonly description: "Take +1 Might (max +3).";
         readonly source: "arbiter";
-        readonly effects: {
-            readonly stats: {
-                readonly Might: 1;
-            };
-        };
     };
     readonly "carry-a-big-stick": {
         readonly name: "Carry a Big Stick";
@@ -45,11 +26,6 @@ declare const moves: {
         readonly name: "Hardy";
         readonly description: "Take 1 additional injury boxes. Whenever time passes or you journey to a new clearing, you can clear 2 injury boxes automatically.";
         readonly source: "arbiter";
-        readonly effects: {
-            readonly harm: {
-                readonly injury: 1;
-            };
-        };
     };
     readonly "strong-draw": {
         readonly name: "Strong Draw";
@@ -395,6 +371,9 @@ declare const moves: {
         readonly name: "Diplomat";
         readonly description: "You are known across the Woodland as an accomplished diplomat; **you have a track (Diplomat) to reflect your professional reputation**. When you raise your reputation with any faction, raise Diplomat; when you lower your reputation with any faction, lower Diplomat. You cannot lower Diplomat below +0 or raise it above +3.\n- Mark exhaustion to use Diplomat when you ask for a favor or meet someone important for the first time, regardless of the faction of your target.\n- When you persuade or figure out an important NPC while acting on behalf of another—not you or your band—roll with Diplomat instead of Charm.";
         readonly source: "envoy";
+        readonly extraDefault: {
+            readonly diplomacy: 0;
+        };
     };
     readonly "fancy-meeting-you-here": {
         readonly name: "Fancy Meeting You Here";
@@ -425,6 +404,43 @@ declare const moves: {
         readonly name: "Small Ship";
         readonly description: "By default, your ship has a wear track with four boxes. Mark wear when it suffers serious damage or when a move calls for it. When your ship’s wear track is filled you are dead in the water and must be repaired at port. If you must mark wear on your ship but its whole track is full, your ship is lost. If you ever lose the ship the GM may present you with an opportunity to get a new one.";
         readonly source: "pirate";
+        readonly extra: {
+            readonly blessings: readonly [{
+                readonly name: "stocked";
+                readonly description: "your ship gains a 2-box depletion track of cargo and gear";
+            }, {
+                readonly name: "nimble";
+                readonly description: "take +1 ongoing to tricking NPCs when relying on your ship’s speed";
+            }, {
+                readonly name: "renowned";
+                readonly description: "take +1 to reputation with a faction (your choice) while on your ship";
+            }, {
+                readonly name: "swift";
+                readonly description: "once per session, mark wear to outrun any pursuer";
+            }];
+            readonly flaws: readonly [{
+                readonly name: "dreaded";
+                readonly description: "take -1 to reputation with a faction (your choice) while on your ship";
+            }, {
+                readonly name: "rickety";
+                readonly description: "your ship has one fewer box of wear";
+            }, {
+                readonly name: "clumsy";
+                readonly description: "take -1 ongoing to trusting fate when piloting your ship carefully";
+            }, {
+                readonly name: "stolen";
+                readonly description: "someone dangerous is pursuing you to recover their property";
+            }];
+        };
+        readonly extraDefault: {
+            readonly name: "";
+            readonly wear: 0;
+            readonly maxWear: 4;
+            readonly depletion: 0;
+            readonly maxDepletion: 0;
+            readonly blessings: {};
+            readonly flaws: {};
+        };
     };
     readonly "sail-on": {
         readonly name: "Sail On";

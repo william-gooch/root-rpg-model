@@ -53,7 +53,7 @@ export interface Character {
 
     roguishFeats: { [k in RoguishFeat]?: boolean };
     weaponSkills: { [k in WeaponSkill]?: boolean };
-    moves: { -readonly [k in keyof typeof moves]?: boolean };
+    moves: { -readonly [k in keyof typeof moves]?: boolean | object };
 
     equipment: EquipmentItem[];
 }
@@ -84,7 +84,7 @@ export const fromPlaybook = (playbook: Playbook): Character => {
 
         roguishFeats: playbook.initialRoguishFeats.startWith,
         weaponSkills: {},
-        moves: playbook.moves.starting.startWith,
+        moves: Object.fromEntries(Object.entries(playbook.moves.starting.startWith).map(([name, value]) => [name, (moves as any)[name].extraDefault ? (moves as any)[name].extraDefault : value])),
 
         equipment: [],
     };

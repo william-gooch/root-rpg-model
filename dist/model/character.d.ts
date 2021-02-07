@@ -53,7 +53,7 @@ export interface Character {
         [k in WeaponSkill]?: boolean;
     };
     moves: {
-        -readonly [k in keyof typeof moves]?: boolean;
+        -readonly [k in keyof typeof moves]?: boolean | object;
     };
     equipment: EquipmentItem[];
 }

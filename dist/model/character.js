@@ -1,7 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.fromPlaybook = void 0;
 const faction_1 = require("./faction");
+const moves_1 = __importDefault(require("./playbooks/moves"));
 exports.fromPlaybook = (playbook) => {
     return {
         playbook: playbook.id,
@@ -22,7 +26,7 @@ exports.fromPlaybook = (playbook) => {
         },
         roguishFeats: playbook.initialRoguishFeats.startWith,
         weaponSkills: {},
-        moves: playbook.moves.starting.startWith,
+        moves: Object.fromEntries(Object.entries(playbook.moves.starting.startWith).map(([name, value]) => [name, moves_1.default[name].extraDefault ? moves_1.default[name].extraDefault : value])),
         equipment: [],
     };
 };

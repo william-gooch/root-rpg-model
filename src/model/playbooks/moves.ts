@@ -6,20 +6,8 @@ export interface Move {
   name: string;
   description: string;
   source: keyof typeof playbooks;
-  effects?: {
-    stats?: {
-      [stat in Stat]?: number
-    },
-    harm?: {
-      [harm in keyof Harm]?: number
-    },
-    weaponSkills?: {
-      [skill in WeaponSkill]?: boolean
-    },
-    roguishFeats?: {
-      [feat in RoguishFeat]?: boolean
-    }
-  }
+  extra?: any;
+  extraDefault?: any;
 }
 
 const moves = {
@@ -28,9 +16,6 @@ const moves = {
     name: "Brute",
     description: "Take +1 Might (max +3).",
     source: "arbiter",
-    effects: {
-      stats: { "Might": 1 }
-    }
   },
   "carry-a-big-stick": {
     name: "Carry a Big Stick",
@@ -50,9 +35,6 @@ On a miss, you smash through, but you leave yourself totally vulnerable on the o
     name: "Hardy",
     description: "Take 1 additional injury boxes. Whenever time passes or you journey to a new clearing, you can clear 2 injury boxes automatically.",
     source: "arbiter",
-    effects: {
-      harm: { injury: 1 }
-    }
   },
   "strong-draw": {
     name: "Strong Draw",
@@ -481,6 +463,7 @@ On a miss, someone powerful takes offense at your plunder of local sites.`,
 - Mark exhaustion to use Diplomat when you ask for a favor or meet someone important for the first time, regardless of the faction of your target.
 - When you persuade or figure out an important NPC while acting on behalf of another—not you or your band—roll with Diplomat instead of Charm.`,
     source: "envoy",
+    extraDefault: { diplomacy: 0 },
   },
   "fancy-meeting-you-here": {
     name: "Fancy Meeting You Here",
@@ -516,6 +499,21 @@ On a miss, someone powerful takes offense at your plunder of local sites.`,
     name: "Small Ship",
     description: "By default, your ship has a wear track with four boxes. Mark wear when it suffers serious damage or when a move calls for it. When your ship’s wear track is filled you are dead in the water and must be repaired at port. If you must mark wear on your ship but its whole track is full, your ship is lost. If you ever lose the ship the GM may present you with an opportunity to get a new one.",
     source: "pirate",
+    extra: {
+      blessings: [
+        { name: "stocked", description: "your ship gains a 2-box depletion track of cargo and gear" },
+        { name: "nimble", description: "take +1 ongoing to tricking NPCs when relying on your ship’s speed" },
+        { name: "renowned", description: "take +1 to reputation with a faction (your choice) while on your ship" },
+        { name: "swift", description: "once per session, mark wear to outrun any pursuer" },
+      ],
+      flaws: [
+        { name: "dreaded", description: "take -1 to reputation with a faction (your choice) while on your ship" },
+        { name: "rickety", description: "your ship has one fewer box of wear" },
+        { name: "clumsy", description: "take -1 ongoing to trusting fate when piloting your ship carefully" },
+        { name: "stolen", description: "someone dangerous is pursuing you to recover their property" },
+      ]
+    },
+    extraDefault: { name: "", wear: 0, maxWear: 4, depletion: 0, maxDepletion: 0, blessings: {}, flaws: {} },
   },
   "sail-on": {
     name: "Sail On",
